@@ -1,5 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: royalblue;
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 45%, rgba(198,21,40,1) 90%);
+
 }
 .container{
     display: grid;
@@ -10,12 +19,11 @@ body{
 }
 
 .navigation{
-    border: 1px solid black;
     display: flex;
     grid-column: span 3;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.3);
+
 }
 
 ul{
@@ -31,7 +39,7 @@ li{
 li a{
    text-decoration: none; 
    padding: 20px;
-   color: black;
+   color: white;
    font-weight: bold;
 }
 
@@ -41,13 +49,14 @@ li a:hover {
 }
 
 .content{
-    border: 1px solid black;
     display: flex;
     grid-column: span 3;
     grid-row: span 3;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    height: 550px;
+    
 }
 
 .item{
@@ -57,19 +66,58 @@ li a:hover {
 
 .item a {
     text-decoration: none;
-    background-color: blue;
+    background-color: rgba(0, 0, 200, 0.5);
     color: white;
     border-radius: 10px;
     padding: 8px;
 }
 
 .item a:hover {
-    background-color: tomato;
+    color: white;
+    background-color: blue;
 }
 
 .photo img{
     height: 300px;
     width: 300px;
-    border-radius: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 15px black;
+}
+
+.hubby {
+    grid-column: span 3;
+    grid-row: span 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.q {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 5px 5px 10px black;
+}
+
+.hubby1 {
+    background-color: grey;
+}
+.hubby2 {
+    background-color: grey;
+}
+.hubby3 {
+    background-color: grey;
+}
+
+.work{
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.work img{
+    width: 30%;
+    height: auto;
 }
 
